@@ -3,7 +3,7 @@ import useFetchNewData from "../../../hooks/useFetchNewData";
 import BrowserBreadcrumb from "../../../components/BrowserBreadcrumb/BrowserBreadcrumb";
 
 const BrowserBreadcrumbContainer = (props) => {
-  const { contentClickedHandler } = useFetchNewData();
+  const contentClickedHandler = useFetchNewData();
 
   return (
     <BrowserBreadcrumb

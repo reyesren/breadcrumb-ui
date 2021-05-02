@@ -3,7 +3,7 @@ import MainContent from "../../../components/MainContent/MainContent";
 import useFetchNewData from "../../../hooks/useFetchNewData";
 
 const MainContentContainer = (props) => {
-  const { contentClickedHandler } = useFetchNewData();
+  const contentClickedHandler = useFetchNewData();
 
   return (
     <MainContent

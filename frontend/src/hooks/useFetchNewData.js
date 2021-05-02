@@ -17,7 +17,7 @@ const useFetchNewData = () => {
     []
   );
 
-  return { contentClickedHandler };
+  return contentClickedHandler;
 };
 
 export default useFetchNewData;
