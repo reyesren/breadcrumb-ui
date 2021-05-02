@@ -62,8 +62,9 @@ app.get("/path/*", parsePathMiddleware, (req, res, next) => {
   while (i < path.length && !isInvalid) {
     let entry = path[i];
     if ((i === 0) & (entry === "root")) {
-      children = root.children;
       type = root.type;
+      if (type === "dir") children = root.children;
+      else children = [];
     } else if (i > 0 && Object.keys(children).includes(entry)) {
       type = children[entry].type;
       if (type === "dir") children = children[entry].children;
