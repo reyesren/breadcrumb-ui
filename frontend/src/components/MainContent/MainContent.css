@@ -1,0 +1,26 @@
+.current-location {
+  font-style: italic;
+}
+
+.content-title {
+  margin-bottom: 25px;
+}
+
+.contents-container {
+  margin: 50px;
+  background-color: #e9ecef;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border: 2px solid grey;
+}
+
+.children-items {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.children-item {
+  color: #007bff;
+  margin-left: 10px;
+  cursor: pointer;
+}
